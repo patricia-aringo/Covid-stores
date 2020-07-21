@@ -5,19 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/styles.css">
-    
+    <link rel="stylesheet" href="/css/styles.css">
+        
 </head>
-<body>
-    <div class="sales">
-        <h1>Log in</h1>
-        <form action="quotes" method="post">
-            <input type="text" class="form-control" value="username"><br></br>
-            <input type="password" class="form-control" name="pasword" value="password" placeholder="show password"><br></br>
-            <!-- <input type="submit" class="form-control" name="login" id="login" value="Log in" > -->
-            <button type="submit">Log in</button>
-         </form>
+<body id="logBody">
+    <div class="container-fluid">
+        <div class="form-row">
+            <div class="col-7">
+                <img src="/images/logo3.jpg" alt="" class="logo">
+            </div>
+            <div class="col-5" id="login">
+                <form action="/" class="login" id="loginForm" method="POST">
+                    <h2 id="logHead">PLEASE LOGIN HERE</h2>
+                    <br><br>
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control" id="username" 
+            name="username" 
+                placeholder="Enter Username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" 
+            name="password" 
+                placeholder="Enter Password" required>
+                    </div>
+                    <input type="submit" id="loginButton" value="login">
+                    <br><br><br>
+                    <small id="adminhelp" class="form-text text-muted">Forgot 
+            password? or Dont have an account? Please consult the 
+            Administrator for Help.</small>
+                  </form>
+            </div>
         </div>
+    </div>
+    
+    <!-- <footer style="background-color: whitesmoke"><img src="/images/boda.png" alt=""> Covid Stores&copy;
+        2020
+    </footer> -->
+
+    <script src="/validation.js"></script>
 </body>
-<script src="login.js"></script>
 </html>

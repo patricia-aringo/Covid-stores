@@ -1,6 +1,38 @@
-.sales{
-    background-color:black;
-    padding: 40px;
-    font-size: larger;
-    color: blue;
+.logo{
+    text-align: center;
+    width: 600px;
+    height: 580px;
+}
+
+#logBody{
+    background-color:rgb(30, 83, 96);
+}
+
+#login{
+    background-color: rgb(211, 211, 211);
+    font-family: inherit;
+    font-weight: bold;
+    padding: 60px;
+    color: rgb(103, 102, 102);
+}
+
+#logHead{
+    text-align: center;
+
+}
+
+#loginButton{
+    color: rgb(103, 102, 102);
+    background-color: rgb(163, 163, 243);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* Agent Registration */
+#agentReg{
+    font-weight: bold;
+    padding: 50px;
 }

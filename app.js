@@ -1,17 +1,20 @@
 const express = require('express')
 const nodemon = require('nodemon')
 const path = require('path')
+const bodyParser = require('body-parser')
 const pug = require('pug')
 const app = express()
+const mainRoutes = require('./routes/mainRoutes')
 
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 
+app.set('views',path.join(__dirname,'views'));
+app.set('view engine','pug');
 
-app.get('/about',(req,res)=>{
-    res.sendFile(path.join(__dirname, '../views', 'login.html'))
-})
-app.post('/about',(req,res)=>{
-    res.send('req.body')
-})
+app.use(express.static('public'))
+
+app.use('/', mainRoutes)
 
 app.get('*',()=>{
     res.send('error page')
