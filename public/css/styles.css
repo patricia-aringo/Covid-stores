@@ -5,7 +5,7 @@
 }
 
 #logBody{
-    background-color:rgb(30, 83, 96);
+    background-color:rgb(12, 56, 114);
 }
 
 #login{
@@ -32,7 +32,32 @@
 
 
 /* Agent Registration */
+.main{
+    width: 70%;
+    height: 10px;
+}
 #agentReg{
     font-weight: bold;
     padding: 50px;
+    border: 5px solid black;
+    margin:20px;
+    background-color: blue;
 }
+
+/* List of items */
+.main-content{
+    width: 70%;
+    font-weight: bold;
+    border: 1px solid black;
+    /* margin-left: 20%; */
+    /* margin-top: 20%; */
+    margin: 5%;
+}
+#item{
+    padding-top: 45px;
+    padding-left: 30px;
+}
+
+
+
+

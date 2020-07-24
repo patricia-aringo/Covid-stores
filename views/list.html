@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of items</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="main-content ">
+   <div class="container-fluid" id="list">
+       <div class="form-row">
+
+       
+       <div class="col-6">
+        <form action="/" class="list" id="list" method="POST">
+            <h2>Item's list</h2>
+            <div class="form-group">
+              <label for="itemname">Item Name</label>
+              <input type="text" class="form-control" id="itemname" name="itemname" placeholder="Enter Item Name" required>
+            </div>
+            <div class="form-group">
+              <label for="make">Make</label>
+              <input type="text" class="form-control" id="make" name="make" placeholder="Enter Make" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date of entry</label>
+                <input type="text" class="form-control" id="date" name="date" placeholder="Enter Date" required>
+              </div>
+              <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" class="form-control" id="category" name="category" placeholder="Enter Item Category">
+              </div>
+              <div class="form-group">
+                <label for="number">Serial Number</label>
+                <input type="text" class="form-control" id="number" name="number" placeholder="Enter Serial Number" required>
+              </div>
+              <div class="form-group">
+                <label for="color">Color</label>
+                <input type="text" class="form-control" id="color" name="color" placeholder="Enter Color" required>
+              </div>
+            </form>
+       </div>
+    
+          <div class="col-6" id="item">
+              <form action="/" class="list" id="list" method="POST">
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="description" class="form-control" id="description" name="description" placeholder="Enter Item Description" required>
+              </div>
+              <div class="form-group">
+                <label for="number">Number in Stock</label>
+                <input type="number" class="form-control" name="number" id="number" placeholder="Number in stock" required>
+              </div>
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input type="price" class="form-control" name="price" id="price" placeholder="Enter Price" required>
+              </div>
+              <div class="form-group">
+                <label for="pay">Initial pay</label>
+                <input type="pay" class="form-control" name="pay" id="pay" placeholder="Enter Initial pay" required>
+              </div>
+              <div class="form-group">
+                <label for="interval">Pay Interval</label>
+                <input type="interval" class="form-control" name="interval" id="interval" placeholder="Enter Pay Interval" required>
+              </div>
+              <div class="image">
+                <img src="" alt="pictuer of curtains">
+              </div>
+            <input type="submit" id="submitAgent" value="Register">
+          </form>
+          </div>
+        </div>  
+   </div>
+</body>
+</html>

@@ -5,35 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Records</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <form name="data"> 
-      
-    <label for="name">User name</label><br>
-    <input type="text" class="form-control" id="name" placeholder="First name">
-    <input type="text" class="form-control" id="name" placeholder="Last name"><br>
-    <label for="district">Location</label><br>
-    <input type="text" class="form-control" id="district" placeholder="District">
-    <input type="text" class="form-control" id="address" placeholder="Address"><br>
-    <label for="contact">Contact</label><br>
-    <input type="number" class="form-control" id="phonenumber" placeholder="Phone number">
-    <input type="email" class="form-control" id="email" placeholder="Email"><br></br>
-    <input type="number" class="form-control" id="nationalid" placeholder="National ID No."><br></br>
-    <label for="name">Item name</label>
-    <input type="text" name="name" id="name" class="form-control"><br></br>
-    <label for="serialnumber">Item serial number</label>
-    <input type="text" class="form-control" id="serialnumber"><br></br>
-    <input type="amount" class="form-control" id="initialpay" placeholder="Initial pay.">
-    <input type="date" class="form-control" id="date" placeholder="Date of pay."><br></br>
-    <input type="amount" class="form-control" id="amount" placeholder="Next amount.">
-    <input type="date" class="form-control" id="date" placeholder="Next Date of pay."><br></br>
-    <label for="refereeno">Referee No.</label>
-    <input type="number" class="form-control" name="refereeno" id="refereeno."><br></br>
-    <label for="purchasereceipt">Purchase receipt</label>
-    <input type="radio" class="form-control" placeholder="yes">
-    <input type="radio" class="form-control" placeholder="no">
-</form>
+    <div class="container-fluid">
+    <div class="form-row">
+
+    <div class="col-6">
+        <form name="data">
+                
+            <div class="form-group">
+            <label for="name">First name</label><br>
+            <input type="text" class="form-control" id="name" name="name" placeholder="First name" required>
+            </div>
+            
+            <div class="form-group">
+            <label for="name">Last name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Last name" required>
+                  
+            </div>
+            
+            
+           
+         <div class="form-group">
+            <label for="district">Location</label>
+            <input type="text" class="form-control" name="district" id="district"placeholder="District" required>
+         </div>
+       <div class="form-group">
+        <label for="number">Phone Number</label><br>
+        <input type="text" class="form-control" name="number" id="number" placeholder="Phone number" required>
+       </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+        </div>
+        
+        <div class="form-group">
+        <input type="text" class="form-control" name="nin" id="nin" placeholder="National ID No.">
+        </div>
+        </form>
+    </div>
+            
+                <div class="col-6">
+                    <form action="">
+                    <div class="form-group">
+                        <label for="name">Item name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Item Name" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="number">Item serial number</label>
+                        <input type="text" class="form-control" name="number" id="number" placeholder="Enter Serial Number" required>
+                        </div>
+                        <div class="form-group">
+                        <input type="amount" class="form-control" name="initialPay" id="initialPay" placeholder="Initial Pay." required>
+                        </div>
+                        <div class="form-group">
+                        <input type="date" class="form-control" name="date" id="date" placeholder="Date of pay." required>
+                        </div>
+                        
+                        <div class="form-group">
+                        <input type="amount" class="form-control" name="amount" id="amount" placeholder="Enter Next amount." required>
+                        
+                        </div>
+                        <div class="form-group">
+                        <input type="date" class="form-control" name="date" id="date" placeholder="Next Date of pay." required>
+                        </div>
+                        <div class="form-group">
+                        <label for="number">Referee No.</label>
+                        <input type="text" class="form-control" name="number" id="number" placeholder="Referee No." required>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                        <label for="yes">Purchase receipt</label><br>
+                        <label for="">yes</label>
+                        <input type="radio" name="receipt" checked>
+                        <label for="">no</label>
+                        <input type="radio" name="receipt" checked>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+            </div>
+        
+    </div>
+    
 </body>
 
 <script src="record.js"></script>
