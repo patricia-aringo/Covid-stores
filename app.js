@@ -2,9 +2,20 @@ const express = require('express')
 const nodemon = require('nodemon')
 const path = require('path')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const pug = require('pug')
 const app = express()
 const mainRoutes = require('./routes/mainRoutes')
+
+
+// Database connection
+mongoose.connect('mongodb://localhost:27017/CovidStore',{useNewUrlParser:true, useUnifiedTopology:true, useFindAndModify: false},function(err){
+    if (err) throw err;
+    else
+    console.log('Database Connected');  
+})
+
+
 //
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
