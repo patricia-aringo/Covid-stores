@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Records</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="recordBody">
     <div class="container-fluid">
     <div class="form-row">
 
     <div class="col-6">
-        <form name="data">
+        <form action="/" class="record" id="record" method="POST">
                 
             <div class="form-group">
             <label for="name">First name</label><br>
@@ -47,7 +47,7 @@
     </div>
             
                 <div class="col-6">
-                    <form action="">
+                    <form action="/" class="record" id="record" method="POST">
                     <div class="form-group">
                         <label for="name">Item name</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Enter Item Name" required>
