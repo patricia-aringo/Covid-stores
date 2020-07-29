@@ -5,7 +5,7 @@
 }
 
 #logBody{
-    background-color:rgb(12, 56, 114);
+    background-color:rgb(13, 55, 103);
 }
 
 #login{
@@ -44,22 +44,7 @@
     background-color: rgb(125, 178, 196);
 }
 
-/* List of items */
-.main-content{
-    width: 70%;
-    font-weight: bold;
-    border: 1px solid black;
-    /* margin-left: 20%; */
-    /* margin-top: 20%; */
-    margin: 5%;
-}
-#item{
-    padding-top: 45px;
-    padding-left: 30px;
-}
-#submitAgent{
-    text-align: left;
-}
+
 
 /* Records */
 .recordBody{

@@ -1,0 +1,15 @@
+* List of items */
+.main-content{
+    width: 70%;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: lightblue;
+    margin: 5%;
+}
+#item{
+    padding-top: 45px;
+    padding-left: 30px;
+}
+#submitAgent{
+    text-align: left;
+}
