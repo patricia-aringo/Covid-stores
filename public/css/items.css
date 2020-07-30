@@ -1,15 +1,50 @@
-* List of items */
+/* List of items */
 .main-content{
     width: 70%;
     font-weight: bold;
     border: 1px solid black;
-    background-color: lightblue;
+    background-color:white;
     margin: 5%;
+    border-radius: 5px;
+}
+
+
+#list{
+    background-color: lightblue;
 }
 #item{
+    background-color: lightblue;
     padding-top: 45px;
     padding-left: 30px;
 }
 #submitAgent{
-    text-align: left;
+   
+    margin-bottom: 5px;
+    color: rgb(103, 102, 102);
+    background-color: rgb(163, 163, 243);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* products */
+.hello{
+    /* background-color: red; */
+    /* border: 2px solid blue; */
+    background-position: cover;
+    background-size: 5%;
+    width: 100%;
+    height: 300%;
+}
+
+#products{
+    
+    
+    padding-right: 0%;
+    /* margin: 10px; */
+}
+#item{
+    padding: 30px;
 }
