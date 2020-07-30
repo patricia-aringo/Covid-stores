@@ -19,7 +19,9 @@ router.get('/list',(req,res)=>{
     res.sendFile(path.join(__dirname,'../views','/list.html'))
 })
 
-
+router.get('/products',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../views','/products.html'))
+})
 
 
 

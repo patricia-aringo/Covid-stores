@@ -52,4 +52,16 @@
     background-color: black;
 }
 
-
+/* products */
+.hello{
+  
+}
+#products{
+    background-color: burlywood;
+    border: 2px solid blue;
+    padding-right: 0%;
+    margin: 10px;
+}
+#item{
+    padding: 30px;
+}
